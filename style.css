@@ -1,0 +1,338 @@
+*{
+    Padding : 0;
+    Margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header {
+  text-align: center;
+}
+header .overlay{
+  box-sizing: content-box;
+  width: 100%;
+	height: 100%;
+  /*background-image: url(pics/pattern.png); /*Picture taken from https://davidbaptistechirot.blogspot.com/2018/04/pattern-background-hd-png.html*/
+  background-color: white;
+  padding: 0;
+}
+.navbar {
+  box-sizing:content-box;
+  width: 100%;
+  background-color: #396223;
+  text-align: center;
+  z-index: initial;
+  margin-top: 0px;
+  left:0;
+  right:0;
+  top:0;
+  border-radius: 0px;
+}
+.navbar a {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 10px;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+}
+.navbar a:hover, .navbar a:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+.overlay h1 {
+  width: 100%;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px #333;
+  margin-top: 50px;
+	margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.overlay h2 {
+  box-sizing: content-box;
+  max-width: 100%;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+  margin-bottom: 50px;
+  font-size: 18px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+button a{
+	text-decoration: none;
+}
+body{
+  margin:0;
+  background-color:#FCF8F2;
+}
+.text-container{
+  text-align: left; /*adjust text align*/
+  background-color: white;
+  max-width: 1000px;
+  margin:auto;
+  padding: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 0px; /*removes the automatic curving of edges*/
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+body h1{
+  font-size: 5vw;
+  text-align: left;
+  max-width: 100%;
+  color: black;
+  padding-bottom: 10px;
+  line-height: 1.6;
+  padding-top: 60px;
+}
+body h2{
+  font-size: 18pt;
+  text-align: left;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+body p{
+  max-width: 100%;
+  padding-top:0px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+body li{
+  font-size: auto;
+  margin: 25px;
+  line-height: 1.6;
+  margin: 10px;/* space between the horizontal lines in a list */
+  }
+body ul{
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+body div{
+  padding: 10px;
+  border-radius: 5px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.about-container{
+  position: static;
+  display: flex;
+  flex-direction: row;
+  flex:3;
+  padding: 0;
+  text-align: center;
+}
+.about-container ul{
+  padding: 0;
+}
+.about-container p{
+  margin: 0;
+}
+.about-container a{
+  border: 2px;
+  padding: 4px;
+  line-height: 2;
+}
+.about-container a:focus{
+  outline: 1px solid grey;
+  text-decoration: underline;
+}
+.about-container img{
+  max-width: 100%;
+}
+.title{
+  text-align: center;
+}
+.SubHeader{
+  font-size: 19px;
+  font-style: italic;
+}
+.image{
+    max-width: auto;
+    height:auto;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+a.onHoverChangeSize:hover{
+    color: orangered;
+    text-decoration: none;
+}
+a.onHoverChangeSize{
+    text-decoration: none;
+}
+footer{
+  background-color: #396223;
+}
+.footer-container{
+  position: relative;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:auto;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+}
+.footer-container > div{
+  flex:3;
+  padding-left: 10%;
+  padding-top: 20px;
+}
+.footer-container h3{
+  font-size: 19px;
+  text-align: left;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+}
+.footer-container a{
+  font-size: 15px;
+  text-align: left;
+  border: 2px;
+  padding: 4px;
+  line-height: 2;
+ }
+.footer-container a:focus{
+  outline: 1px solid white;
+  text-decoration: underline;
+}
+.footer-container a:link{
+  color: white;
+  text-decoration: none;
+}
+.footer-container a:hover{
+  text-decoration: underline;
+}
+.footer-container a:visited{
+  color: white;
+}
+.footer-container ul{
+  padding: 0;
+}
+.contact{
+  display: column;
+  color:white;
+}
+.contact a, .follow a{
+  padding-left: 0;
+}
+.contact img{
+  display: inline;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+.follow a:focus{
+  background-color: #396223;
+  font-size: 0px;
+}
+.follow img{
+  display: inline;
+  padding-left:5px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 1201px) {
+  .image{
+    height:auto;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:1000px) {
+  .footer-container > div{
+    padding-left: 4%;
+  }
+}
+@media screen and (max-width:965px) {
+  .overlay h1{
+    font-size: 50px;
+    padding-top: 140px;
+  }
+  .overlay h2{
+    font-size: 18px;
+  }
+  .text-container, .about-text-container{
+    padding: 40px;
+  }
+}
+@media screen and (max-width:905px){
+  .footer-container > div{
+    flex: none;
+    padding-left: 5px;
+  }
+}
+@media screen and (max-width:700px){
+  .footer-container > div{
+    min-width: 215px;
+  }
+}
+@media screen and (max-width:650px){
+  .navbar {
+    float: none;
+    position: relative;
+    margin-bottom: -30px;
+    padding: 0;
+  }
+  .navbar a {
+    width: 100%;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .overlay h1{
+    max-width: 100%;
+    position: relative;
+    font-size: 50px;
+    padding-top: 0px;
+  }
+  .overlay h2{
+    max-width: 100%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .overlay{
+    padding: 0;
+  }
+  .footer-container{
+    padding-left: 40px;
+    flex-direction: column;
+  }
+  .about-container{
+    flex-direction: column;
+  }
+  
+}
